@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Журнал "Іменник" 23-26§</title>
+    <title>Журнал "Іменник" §23-26</title>
     <style>
         * {
     margin: 0;
@@ -14,19 +14,20 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 
     font-family: sans-serif;
-    background-color: powderblue;
+    background-color: rgb(193, 232, 237);
 }
 
 /* Book */
 .book {
     position: relative;
-    width: 380px;
-    height: 800px;
+    width: 400px;
+    height: 750px;
     transition: transform 0.5s;
 }
 
@@ -40,9 +41,40 @@ body {
 
 }
 
+.front-content h1,
+.back-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 198);
+    background-color: rgba(176, 172, 249, 0.306);
+}
+
+.front-content h2,
+.back-content h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.front-content p,
+.back-content p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.front-content ul,
+.back-content ul {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
 .front,
 .back {
-    background-color: rgb(239, 239, 238);
+    background-color: rgb(238, 238, 238);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -69,10 +101,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .back-content {
     transform: rotateY(180deg)
+}
+
+.margin {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.super-margin {
+    margin-bottom: 45px;
 }
 
 /* Paper flip effect */
@@ -86,7 +128,7 @@ button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    margin: 10px;
+    margin: 200px;
     transition: transform 0.5s;
 }
 
@@ -118,7 +160,6 @@ i {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Previous Button -->
     <button id="prev-btn">
         <i class="fas fa-arrow-circle-left"></i>
     </button>
@@ -128,76 +169,100 @@ i {
         <div id="p1" class="paper">
             <div class="front">
                 <div id="f1" class="front-content">
-                    <h1>Всіх вітаю в журналі "Іменник" 23-26§<br>
-                        Ми дуже вдячні за ваш вибір
-                    </h1>
+                    <h1>Вітаємо в журналі "Іменник" §23-26</h1>
                 </div>
             </div>
             <div class="back">
                 <div id="b1" class="back-content">
-                    <h1>23§. Характеристика частин мови. Службові частини мови. Вигук. <br>
-                        Є різні частини мови. Є самостійні, службові. Але є особлива частина -- вигук. <br>Зараз це буде тут коротко описано: <br>
-                        Самостійні: <br>
-                        Іменник прикметник числівник займенник дієслово прислівник. <br>
-                        Опис: мають лексичне значення, ознаки, мають синтаксичну роль. 
-                    </h1>
+                    <h1 class="margin">§23. Характеристика частин мови. Службові частини мови. Вигук. <br></h1>
+                    <p class="margin">Існують різні частини мови. Є самостійні, службові. Але є особлива частина -- вигук. <br>Зараз це буде тут коротко описано. <br></p>
+                        <h2 class="margin">Самостійні:</h2>
+                        <ul class="margin">
+                            <li>прикметник</li>
+                            <li>числівник</li>
+                            <li>займенник</li>
+                            <li>дієслово</li>
+                            <li>прислівник</li>
+                        </ul>
+                        <p class="margin">Опис: мають лексичне значення, ознаки, мають синтаксичну роль.</p>
+                        <h2 class="margin">Службові:</h2>
+                        <ul class="margin">
+                            <li>Прийменник</li>
+                            <li>Сполучник</li>
+                            <li>Частка</li>
+                        </ul>
+                        <p>Опис: слугують для "доповнення" самостійних частин.</p>
+                        
                 </div>
             </div>
         </div>
         <div id="p2" class="paper">
             <div class="front">
                 <div id="f2" class="front-content">
-                    <h1>Службові: <br>
-                        Прийменник, сполучник, частка. <br> 
-                        Опис: слугують для "доповнення" самостійних частин. <br>
-                        Вигук: <br>
-                        Звуки людей, тварин, тд, які не є словами. <br>
-                        Детальніше про слова як частини мови вивчає розділ мови морфологія</h1>
+                <h2 class="margin">Вигук:</h2>
+                    <p class="margin">Звуки людей, тварин, тд, які не є словами.</p>
+                    <p class="super-margin">Детальніше про слова як частини мови вивчає розділ мови морфологія</p>
+                    <h1 class="margin">§24. Іменник як частина мови</h1>
+                        <p>Іменник -- самостійна частина мови,  яка обозначає об'єкт або явище і відповідає на питання хто що. <br>
+                           Охарактеризувати іменник можна за цими ознаками:
+                        </p>
+                         <br>
+                        <ul class="super-margin">
+                            <li>Лексичне значення;</li>
+                            <li>Морфологічні ознаки;</li>
+                            <li>Синтаксична роль.</li>
+                        </ul>
+                        <h1 class="margin">§25. Іменники загальні і власні, конкретні та абстрактні</h1>
+                        <p>Настав час детальніше роздивитись види іменників. Ось вони:</p>
+                    
                 </div>
             </div>
             <div class="back">
                 <div id="b2" class="back-content">
-                    <h1>24§. Іменник як частина мови <br>
-                        Іменник -- самостійна частина мови,  яка обозначає об'єкт або явище і відповідає на питання хто що. <br>
-                        Охарактеризувати Іменник можна за цими ознаками: <br>
-                        Лексичне значення; <br>
-                        Морфологічні ознаки; <br>
-                        Синтаксична роль. <br>
-                        25§. Іменники загальні і власні, конкретні та абстрактні <br>
-                        Настав час детальніше роздивитись види іменників. Ось вони: <br>
-                        
-                    </h1>
+                    <ul class="super-margin">
+                        <li>Загальна назва <br>
+                            Спільна назва для предметів, істот, явищ тд. Наприклад: дощ, місто.
+                        </li>
+                        <li>Власна назва <br> 
+                            Ім'я конкретного предмета, істоти та особи вони починаються завжди з великої літери. Наприклад: Київ, Крим.
+                        </li>
+                        <li>Конкретний <br>
+                            Предмети, до яких можемо доторкнутись. Наприклад: диван, джинси
+                        </li>
+                        <li>Абстрактний <br>
+                            Відчуття, враження, іменники, які не можна відчути.
+                        </li>
+                    </ul>
+                    <h1 class="margin">§26. Велика буква та лапки в назвах</h1>
+                    <p class="margin">У власній назві завжди перша з великої літери.</p>
+                    <p class="margin">Також детальніше можна ознайомитись з правилами в Українському правописі.</p>
+                    <p class="margin">Ще є лапки, якщо є загальна і власна назва, наприклад:</p>
+                        <ul>
+                            <li>літак "Мрія"</li>
+                            <li>автобус "Богдан"</li>
+                        </ul>
                 </div>
             </div>
         </div>
         <div id="p3" class="paper">
             <div class="front">
                 <div id="f3" class="front-content">
-                    
+                    f3
                 </div>
             </div>
             <div class="back">
                 <div id="b3" class="back-content">
-                    <h1>26§. Велика буква та лапки в назвах<br>
-                        У власній назві завжди перша з великої літери. <br>
-                        Також детальніше можна ознайомитись з правилами в Українському правописі. <br>
-                        Ще є лапки, якщо є загальна і власна назва, наприклад: сайт "Літак", автобус "Богдан". <br>
-                        Кінець <br>
-                        Подяки: Морозов Р., Радюк В., Кушнаренко М.<br>
-                        Не працювали: Покотило Д., Контурський М.
-                    </h1>
+                    <h1 class="super-margin">Кінець!</h1>
+                    <p>І головне, не переставайте спілкуватись українською!</p>
                 </div>
             </div>
             <div class="front">
                 <div id="f4" class="front-content">
-                    <h1>Загальна назва <br>
-                        Спільна назва для предметів, істот, явищ тд. Наприклад: дощ, дуб, місто, річка. <br>
-                        Власна назва <br>
-                        Конкретний <br>
-                        Ім'я конкретного предмета, істоти та особи вони починаються завжди з великої літери. Наприклад: Київ, Крим. <br>
-                        Абстрактний <br>
-                        Відчуття, враження, тобто іменники, які не можна відчути.
-                    </h1>
+                    <p class="margin">Працювали:</p>
+                    <p class="super-margin">Морозов Р., Радюк В., Кушнаренко М.
+                    </p>
+                    <p class="margin">Не працювали:</p>
+                    <p>Контурський М., Покотило Д.</p>
                 </div>
             </div>
         </div>
@@ -206,8 +271,7 @@ i {
     <button id="next-btn">
         <i class="fas fa-arrow-circle-right"></i>
     </button>
-    <script>
-        // References to DOM Elements
+    <script defer>
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
 const book = document.querySelector("#book");
@@ -257,7 +321,7 @@ function goNextPage() {
             case 3:
                 paper3.classList.add("flipped");
                 paper3.style.zIndex = 3;
-                closeBook(false);
+                closeBook(false)
                 break;
             default:
                 throw new Error("unkown state");
