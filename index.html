@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,11 +23,10 @@ body {
     background-color: rgb(193, 232, 237);
 }
 
-/* Book */
 .book {
     position: relative;
-    width: 400px;
-    height: 750px;
+    width: 30vw;
+    height: 100vh;
     transition: transform 0.5s;
 }
 
@@ -72,6 +71,10 @@ li {
     list-style-position: inside;
 }
 
+#title {
+    font-size: 45px;
+}
+
 .front,
 .back {
     background-color: rgb(238, 238, 238);
@@ -110,20 +113,17 @@ li {
 
 .margin {
     margin-bottom: 15px;
-    margin-left: 20px;
 }
 
 .super-margin {
     margin-bottom: 45px;
 }
 
-/* Paper flip effect */
 .flipped .front,
 .flipped .back {
     transform: rotateY(-180deg);
 }
 
-/* Controller Buttons */
 button {
     border: none;
     background-color: transparent;
@@ -169,100 +169,89 @@ i {
         <div id="p1" class="paper">
             <div class="front">
                 <div id="f1" class="front-content">
-                    <h1>Вітаємо в журналі "Іменник" §23-26</h1>
+                    <h1 id="title">Вітаємо в журналі <br> "Іменник" §23-26</h1>
                 </div>
             </div>
             <div class="back">
                 <div id="b1" class="back-content">
-                    <h1 class="margin">§23. Характеристика частин мови. Службові частини мови. Вигук. <br></h1>
-                    <p class="margin">Існують різні частини мови. Є самостійні, службові. Але є особлива частина -- вигук. <br>Зараз це буде тут коротко описано. <br></p>
-                        <h2 class="margin">Самостійні:</h2>
+                    <h1 class="margin">§23. Характеристика частин мови. Службові частини мови. Вигук.</h1>
+                    <p class="margin">Усі слова української мови є певними частинами мови: самостійними або службовими. Але є ще вигук, це залишок з раніше переліченого. <br>
+                        Давайте детальніше розберемося:
+                    </p>
+                        <h2 class="margin">Самостійні частини:</h2>
                         <ul class="margin">
+                            <li>іменник</li>
                             <li>прикметник</li>
-                            <li>числівник</li>
-                            <li>займенник</li>
                             <li>дієслово</li>
+                            <li>займенник</li>
+                            <li>числівник</li>
                             <li>прислівник</li>
                         </ul>
-                        <p class="margin">Опис: мають лексичне значення, ознаки, мають синтаксичну роль.</p>
-                        <h2 class="margin">Службові:</h2>
+                        <p class="margin">Вони мають власне лексичне значення та виконують синтаксичні функції у реченні.</p>
+                        <h2 class="margin">Службові частини:</h2>
                         <ul class="margin">
                             <li>Прийменник</li>
                             <li>Сполучник</li>
                             <li>Частка</li>
                         </ul>
-                        <p>Опис: слугують для "доповнення" самостійних частин.</p>
-                        
+                        <p>Вони виступають як засоби зв'язку між самостійними частинами мови.</p>
+                        <h2 class="margin">Вигук:</h2>
+                    <p class="margin">Звуки людей, тварин, спів, тобто усе, крім вище переліченого.</p>
                 </div>
             </div>
         </div>
         <div id="p2" class="paper">
             <div class="front">
                 <div id="f2" class="front-content">
-                <h2 class="margin">Вигук:</h2>
-                    <p class="margin">Звуки людей, тварин, тд, які не є словами.</p>
-                    <p class="super-margin">Детальніше про слова як частини мови вивчає розділ мови морфологія</p>
+                
                     <h1 class="margin">§24. Іменник як частина мови</h1>
                         <p>Іменник -- самостійна частина мови,  яка обозначає об'єкт або явище і відповідає на питання хто що. <br>
                            Охарактеризувати іменник можна за цими ознаками:
                         </p>
                          <br>
-                        <ul class="super-margin">
-                            <li>Лексичне значення;</li>
-                            <li>Морфологічні ознаки;</li>
-                            <li>Синтаксична роль.</li>
-                        </ul>
-                        <h1 class="margin">§25. Іменники загальні і власні, конкретні та абстрактні</h1>
-                        <p>Настав час детальніше роздивитись види іменників. Ось вони:</p>
+                         <h2 class="margin">Лексичне значення іменника:</h2>
+                         <p class="margin">Лексичне значення іменника визначає його концептуальний зміст. Наприклад, слово "дерево" асоціюється з конкретним предметом у природі.</p>
+                         <h2 class="margin">Морфологічні ознаки іменника:</h2>
+                         <p class="margin">До морфологічних ознак іменника належать рід, число та відмінок. Ці ознаки змінюють форму іменника для вираження різних граматичних значень.</p>
+                         <h2 class="margin">Синтаксична роль іменника:</h2>
+                         <p class="super-margin">У реченні іменник може виступати в ролі підмета, додатка, обставини та інших членів речення. Він може бути основою для розгортання пропозиції.</p>
+                        
                     
                 </div>
             </div>
             <div class="back">
                 <div id="b2" class="back-content">
-                    <ul class="super-margin">
-                        <li>Загальна назва <br>
-                            Спільна назва для предметів, істот, явищ тд. Наприклад: дощ, місто.
-                        </li>
-                        <li>Власна назва <br> 
-                            Ім'я конкретного предмета, істоти та особи вони починаються завжди з великої літери. Наприклад: Київ, Крим.
-                        </li>
-                        <li>Конкретний <br>
-                            Предмети, до яких можемо доторкнутись. Наприклад: диван, джинси
-                        </li>
-                        <li>Абстрактний <br>
-                            Відчуття, враження, іменники, які не можна відчути.
-                        </li>
+                    
+                        <h1 class="margin">§25. Іменники загальні і власні, конкретні та абстрактні</h1>
+                        <p class="margin">Іменники в українській мові можна класифікувати за певними критеріями:</p>
+                        <ul class="super-margin">    
+                            <li>Загальні іменники — слова, що позначають клас схожих предметів або явищ, наприклад, "дерево", "місто".</li>
+                            <li>Власні іменники — унікальні назви, які вживаються для позначення конкретних об'єктів чи осіб, таких як "Київ" або "Дніпро".</li>
+                            <li>Конкретні іменники — слова, що вказують на предмети, які можна сприйняти чуттями: "книга", "яблуко".</li>
+                            <li>Абстрактні іменники— виражають поняття, стани або явища, які не мають фізичної форми, наприклад, "краса", "мудрість".</li>
                     </ul>
-                    <h1 class="margin">§26. Велика буква та лапки в назвах</h1>
-                    <p class="margin">У власній назві завжди перша з великої літери.</p>
-                    <p class="margin">Також детальніше можна ознайомитись з правилами в Українському правописі.</p>
-                    <p class="margin">Ще є лапки, якщо є загальна і власна назва, наприклад:</p>
-                        <ul>
-                            <li>літак "Мрія"</li>
-                            <li>автобус "Богдан"</li>
-                        </ul>
+                    <h1 class="super-margin">§26. Велика буква та лапки в назвах</h1>
                 </div>
             </div>
         </div>
         <div id="p3" class="paper">
-            <div class="front">
-                <div id="f3" class="front-content">
-                    f3
-                </div>
-            </div>
             <div class="back">
                 <div id="b3" class="back-content">
-                    <h1 class="super-margin">Кінець!</h1>
-                    <p>І головне, не переставайте спілкуватись українською!</p>
+                    <h1 class="margin">Кінець!</h1>
+                    <p class="super-margin">І головне, не переставайте спілкуватись українською!</p>
+                    <p class="margin">Дякую за допомогу при створенні:</p>
+                    <p>Морозов Р., Радюк В., Кушнаренко М.
+                    </p>
                 </div>
             </div>
             <div class="front">
                 <div id="f4" class="front-content">
-                    <p class="margin">Працювали:</p>
-                    <p class="super-margin">Морозов Р., Радюк В., Кушнаренко М.
-                    </p>
-                    <p class="margin">Не працювали:</p>
-                    <p>Контурський М., Покотило Д.</p>
+                    <p class="margin">В українській мові велика буква використовується на початку власних назв.</p>
+                    <p>Це стосується імен осіб, географічних назв, назв установ, брендів тощо.</p>
+                    <p class="super-margin">У випадку вживання лапок, вони використовуються для виділення конкретної частини зі загальної назви або для надання слову додаткового значення. <br>
+                        Наприклад, сайт "Новини" використовує лапки для підкреслення, що "Новини" є назвою сайту, а не просто словом. </p>
+                    <p class="super-margin">Але! Якщо ж власна назва стоїть сама, лапки не потрібні: місто Київ, річка Дніпро.</p>
+                    <p class="margin">Пам'ятайте, що правильне використання великої літери та лапок не тільки допомагає уникнути непорозумінь, але й показує повагу до назв та їх власників.</p>
                 </div>
             </div>
         </div>
@@ -280,11 +269,9 @@ const paper1 = document.querySelector("#p1");
 const paper2 = document.querySelector("#p2");
 const paper3 = document.querySelector("#p3");
 
-// Event Listener
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 
-// Business Logic
 let currentLocation = 1;
 let numOfPapers = 3;
 let maxLocation = numOfPapers + 1;
@@ -336,16 +323,16 @@ function goPrevPage() {
             case 2:
                 closeBook(true);
                 paper1.classList.remove("flipped");
-                paper1.style.zIndex = 3;
+                paper1.style.zIndex = 4;
                 break;
             case 3:
                 paper2.classList.remove("flipped");
-                paper2.style.zIndex = 2;
+                paper2.style.zIndex = 3;
                 break;
             case 4:
-                openBook();
                 paper3.classList.remove("flipped");
-                paper3.style.zIndex = 1;
+                paper3.style.zIndex = 2;
+                openBook();
                 break;
             default:
                 throw new Error("unkown state");
